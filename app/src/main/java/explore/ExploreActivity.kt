@@ -1,11 +1,12 @@
-package com.example.professionalservicesapp
+package explore
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import com.example.professionalservicesapp.R
 
-class MainActivity : AppCompatActivity() {
+class ExploreActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_main)
+        setContentView(R.layout.explore_layout)
     }
 }
