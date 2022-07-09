@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "334105698720",
+    "project_id": "professional-services-app",
+    "storage_bucket": "professional-services-app.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:334105698720:android:135b03205efe7a0d9d04c5",
+        "android_client_info": {
+          "package_name": "com.example.professionalservicesapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "334105698720-r0tnu9kjrjstvmc95q7ds6d81f6jds8v.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDnZSc7nZfKfd8wI7wE_-TBlEXdXtjvR2E"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "334105698720-r0tnu9kjrjstvmc95q7ds6d81f6jds8v.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

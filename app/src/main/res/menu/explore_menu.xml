@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/explore_home"
+        android:icon="@drawable/common_google_signin_btn_text_dark"
+        android:title="Explore"/>
+
+    <item
+        android:id="@+id/saved_professions"
+        android:icon="@drawable/common_google_signin_btn_text_dark"
+        android:title="Explore"/>
+
+    <item
+        android:id="@+id/professionalSlide"
+        android:icon="@drawable/common_google_signin_btn_text_dark"
+        android:title="Explore"/>
+
+    <item
+        android:id="@+id/settings"
+        android:icon="@drawable/common_google_signin_btn_text_dark"
+        android:title="Settings"/>
+</menu>

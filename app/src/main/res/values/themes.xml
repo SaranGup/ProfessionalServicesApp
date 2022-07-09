@@ -16,4 +16,12 @@
         <item name="android:windowNoTitle">true</item>
         <item name="android:windowFullscreen">true</item>
     </style>
+    <style name="Theme.ProfessionalServicesApp.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+    <style name="Theme.ProfessionalServicesApp.AppBarOverlay"
+        parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+    <style name="Theme.ProfessionalServicesApp.PopupOverlay"
+        parent="ThemeOverlay.AppCompat.Light" />
 </resources>
