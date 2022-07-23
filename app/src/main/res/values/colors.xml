@@ -9,8 +9,9 @@
     <color name="white">#FFFFFFFF</color>
     <color name="brown_main" >#966301</color>
     <color name="brown_light">#C0A167</color>
-    <color name="black_blue">#121C32</color>
+    <color name="black_blue">#242E42</color>
     <color name="transparent">#00000000</color>
     <color name="yellow">#FFEB3B</color>
     <color name="yellow_fade">#80FFEB3B</color>
+    <color name="black_dull">#202020</color>
 </resources>

@@ -6,12 +6,10 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.view.inputmethod.EditorInfo
-import android.widget.EditText
-import android.widget.ImageButton
-import android.widget.LinearLayout
-import android.widget.TextView
+import android.widget.*
 import androidx.fragment.app.Fragment
 import androidx.navigation.fragment.findNavController
+import com.squareup.picasso.Picasso
 import explore.R
 
 
@@ -51,23 +49,27 @@ class ExploreFragment : Fragment() {
 
         if(DataStore.professionDataReady.value==true) initLayout()
         DataStore.professionDataReady.observe(viewLifecycleOwner) {
+            val ds = DataStore
             if (DataStore.professionDataReady.value == true) initLayout()
         }
     }
 
     private fun initLayout() {
-        for(i in 0 until professionsList.size) {
-            val category = professionsList[i]
-            val categoryName = categoriesList[i]
+        val ds = DataStore
+        DataStore.professionsList.forEach { entry ->
+            val category = entry.key
+            val professions = entry.value
             val categoryView: View = layoutInflater.inflate(R.layout.explore_category, null)
-            categoryView.findViewById<TextView>(R.id.category_name).text = categoryName
-            for(profession in category) {
+            categoryView.findViewById<TextView>(R.id.category_name).text = category
+            for(profession in professions) {
                 val professionView: View = layoutInflater.inflate(R.layout.explore_profession, null, true)
-                professionView.findViewById<TextView>(R.id.profession_name).text = profession
+                professionView.findViewById<TextView>(R.id.profession_name).text = profession.name
 
                 professionView.setOnClickListener {
                     sendSearchQuery()
                 }
+
+                Picasso.get().load(profession.pictureLink).into(professionView.findViewById<ImageView>(R.id.profession_image))
 
                 categoryView.findViewById<LinearLayout>(R.id.profession_list).addView(professionView)
             }

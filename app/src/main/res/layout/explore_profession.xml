@@ -19,7 +19,9 @@
             android:layout_height="100dp"
             android:src="@android:drawable/ic_menu_gallery"
             android:contentDescription="@string/app_name"
-            android:background="@drawable/circle_border"/>
+            android:background="@drawable/circle_border"
+            android:scaleType="centerInside"
+            android:adjustViewBounds="true"/>
     </androidx.cardview.widget.CardView>
     <TextView
         android:id="@+id/profession_name"

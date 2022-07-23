@@ -5,8 +5,11 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.example.professionalservicesapp.signInActivity">
+    tools:context="com.example.professionalservicesapp.SignInActivity">
 
-
-
-  </androidx.coordinatorlayout.widget.CoordinatorLayout>
+  <Button
+      android:id="@+id/register_button"
+      android:layout_width="match_parent"
+      android:layout_height="match_parent"
+      android:text="Button" />
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

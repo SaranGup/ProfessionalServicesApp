@@ -19,17 +19,18 @@ android:versionName="TODO">
         android:name="com.example.professionalservicesapp.ExploreActivity"
         android:exported="true"
         android:theme="@style/Theme.ProfessionalServicesApp.NoActionBar">
+    </activity>
+    <activity
+        android:name="com.example.professionalservicesapp.SignInActivity"
+        android:exported="true"
+        android:label="@string/title_activity_sign_in"
+        android:theme="@style/Theme.ProfessionalServicesApp.NoActionBar" >
         <intent-filter>
             <action android:name="android.intent.action.MAIN" />
 
             <category android:name="android.intent.category.LAUNCHER" />
         </intent-filter>
     </activity>
-    <activity
-        android:name="com.example.professionalservicesapp.signInActivity"
-        android:exported="false"
-        android:label="@string/title_activity_sign_in"
-        android:theme="@style/Theme.ProfessionalServicesApp.NoActionBar" />
 </application>
 
 </manifest>
