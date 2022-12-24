@@ -1,15 +1,265 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:background="@color/black_blue"
-    android:padding="30dp">
-    <FrameLayout
-        android:id="@+id/profession_card_frame"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        app:layout_constraintTop_toTopOf="parent"/>
+    android:paddingLeft="30dp"
+    android:paddingRight="30dp">
 
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="-193dp">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="30dp">
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/profile_pic_large"
+                android:layout_width="250dp"
+                android:layout_height="250dp"
+                android:background="@drawable/circle_border"
+                app:cardCornerRadius="125dp"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:adjustViewBounds="true"
+                    android:background="@mipmap/sample_round"
+                    android:foreground="@drawable/circle_border_large"
+                    android:scaleType="fitCenter" />
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/name_label_card"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginTop="30dp"
+                app:cardCornerRadius="10dp"
+                app:layout_constraintTop_toBottomOf="@+id/profile_pic_large">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:id="@+id/name_label"
+                        android:layout_width="130dp"
+                        android:layout_height="match_parent"
+                        android:background="@color/brown_main"
+                        android:gravity="center_vertical"
+                        android:paddingStart="15dp"
+                        android:text="Name"
+                        android:textColor="@color/white"
+                        android:textSize="18dp"
+                        app:layout_constraintHorizontal_weight="2"
+                        app:layout_constraintLeft_toLeftOf="parent"
+                        app:layout_constraintRight_toLeftOf="@id/name_desc"
+                        tools:ignore="RtlSymmetry,SpUsage" />
+
+                    <TextView
+                        android:id="@+id/name_desc"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:background="@color/brown_light"
+                        android:gravity="center_vertical"
+                        android:paddingLeft="15dp"
+                        android:text="Rahul Srivastav"
+                        android:textColor="@color/black_dull"
+                        android:textSize="18dp"
+                        app:layout_constraintHorizontal_weight="3"
+                        app:layout_constraintLeft_toRightOf="@+id/name_label"
+                        app:layout_constraintRight_toRightOf="parent"
+                        tools:ignore="SpUsage" />
+                </androidx.constraintlayout.widget.ConstraintLayout>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/profession_label_card"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginTop="20dp"
+                app:cardCornerRadius="10dp"
+                app:layout_constraintTop_toBottomOf="@+id/name_label_card">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:id="@+id/profession_label"
+                        android:layout_width="130dp"
+                        android:layout_height="match_parent"
+                        android:background="@color/brown_main"
+                        android:gravity="center_vertical"
+                        android:paddingLeft="15dp"
+                        android:text="Profession"
+                        android:textColor="@color/white"
+                        android:textSize="18dp"
+                        app:layout_constraintHorizontal_weight="2"
+                        app:layout_constraintLeft_toLeftOf="parent"
+                        app:layout_constraintRight_toLeftOf="@id/profession_desc" />
+
+                    <TextView
+                        android:id="@+id/profession_desc"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:background="@color/brown_light"
+                        android:gravity="center_vertical"
+                        android:paddingLeft="15dp"
+                        android:text="Carpentar"
+                        android:textColor="@color/black_dull"
+                        android:textSize="18dp"
+                        app:layout_constraintHorizontal_weight="3"
+                        app:layout_constraintLeft_toRightOf="@+id/profession_label"
+                        app:layout_constraintRight_toRightOf="parent" />
+                </androidx.constraintlayout.widget.ConstraintLayout>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/rating_label_card"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginTop="20dp"
+                app:cardCornerRadius="10dp"
+                app:layout_constraintTop_toBottomOf="@+id/profession_label_card">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:id="@+id/rating_label"
+                        android:layout_width="130dp"
+                        android:layout_height="match_parent"
+                        android:background="@color/brown_main"
+                        android:gravity="center_vertical"
+                        android:paddingLeft="15dp"
+                        android:text="Ratings"
+                        android:textColor="@color/white"
+                        android:textSize="18dp"
+                        app:layout_constraintHorizontal_weight="2"
+                        app:layout_constraintLeft_toLeftOf="parent"
+                        app:layout_constraintRight_toLeftOf="@id/rating_desc" />
+
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:id="@+id/rating_desc"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:background="@color/brown_light"
+                        android:paddingLeft="15dp"
+                        app:layout_constraintHorizontal_weight="3"
+                        app:layout_constraintLeft_toRightOf="@+id/rating_label"
+                        app:layout_constraintRight_toRightOf="parent">
+
+                        <com.iarcuschin.simpleratingbar.SimpleRatingBar
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            app:layout_constraintLeft_toLeftOf="parent"
+                            app:srb_rating="3.8"
+                            app:srb_starBorderWidth="0.1"
+                            app:srb_starCornerRadius="0"
+                            app:srb_stepSize="0.1" />
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+                </androidx.constraintlayout.widget.ConstraintLayout>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/about_heading"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginTop="40dp"
+                android:backgroundTint="@color/brown_main"
+                app:cardCornerRadius="10dp"
+                app:layout_constraintTop_toBottomOf="@id/rating_label_card">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="15dp"
+                    android:text="About Me"
+                    android:textColor="@color/white"
+                    android:textSize="18dp"
+                    tools:ignore="HardcodedText" />
+            </androidx.cardview.widget.CardView>
+
+            <TextView
+                android:id="@+id/about_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="20dp"
+                android:text="@string/short_sample_text"
+                android:textColor="@color/white"
+                app:layout_constraintTop_toBottomOf="@id/about_heading" />
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/service_heading"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginTop="20dp"
+                android:backgroundTint="@color/brown_main"
+                app:cardCornerRadius="10dp"
+                app:layout_constraintTop_toBottomOf="@id/about_text">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="15dp"
+                    android:text="Service Details"
+                    android:textColor="@color/white"
+                    android:textSize="18dp" />
+            </androidx.cardview.widget.CardView>
+
+            <TextView
+                android:id="@+id/service_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="20dp"
+                android:text="@string/long_sample_text"
+                android:textColor="@color/white"
+                app:layout_constraintTop_toBottomOf="@id/service_heading" />
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/reviews_heading"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginTop="40dp"
+                android:backgroundTint="@color/brown_main"
+                app:cardCornerRadius="10dp"
+                app:layout_constraintTop_toBottomOf="@id/service_text">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="15dp"
+                    android:text="Ratings"
+                    android:textColor="@color/white"
+                    android:textSize="18dp" />
+            </androidx.cardview.widget.CardView>
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/reviews_list"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                app:layout_constraintTop_toBottomOf="@id/reviews_heading" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

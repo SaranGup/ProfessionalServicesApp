@@ -32,9 +32,11 @@ class ExploreFragment : Fragment() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
-        categoryDisplayList = activity!!.findViewById(R.id.categories_list)
-        searchBar = activity!!.findViewById(R.id.search_bar)
-        searchButton = activity!!.findViewById(R.id.search_button)
+        categoryDisplayList = requireActivity().findViewById(R.id.categories_list)
+        searchBar = requireActivity().findViewById(R.id.search_bar)
+        searchButton = requireActivity().findViewById(R.id.search_button)
+
+        requireActivity().findViewById<EditText>(R.id.search_bar).hint = CurrentUser.phoneNo
 
         searchBar.setImeActionLabel("Search", KeyEvent.KEYCODE_ENTER)
         searchBar.setOnEditorActionListener { _, actionId, event ->
@@ -53,6 +55,8 @@ class ExploreFragment : Fragment() {
             if (DataStore.professionDataReady.value == true) initLayout()
         }
     }
+
+
 
     private fun initLayout() {
         val ds = DataStore
@@ -75,6 +79,12 @@ class ExploreFragment : Fragment() {
             }
             categoryDisplayList.addView(categoryView)
         }
+
+
+    }
+
+    fun loadAddress() {
+
     }
 
     private fun sendSearchQuery() {

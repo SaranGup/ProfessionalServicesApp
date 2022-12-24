@@ -7,9 +7,8 @@
     android:layout_height="match_parent"
     tools:context="com.example.professionalservicesapp.SignInActivity">
 
-  <Button
-      android:id="@+id/register_button"
+  <androidx.fragment.app.FragmentContainerView
+      android:id="@+id/sign_in_fragments"
       android:layout_width="match_parent"
-      android:layout_height="match_parent"
-      android:text="Button" />
+      android:layout_height="match_parent"/>
 </androidx.coordinatorlayout.widget.CoordinatorLayout>

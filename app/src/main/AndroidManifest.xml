@@ -5,6 +5,8 @@ xmlns:tools="http://schemas.android.com/tools"
 package="explore"
 android:versionName="TODO">
 
+<uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+
 <application
     android:allowBackup="true"
     android:dataExtractionRules="@xml/data_extraction_rules"
@@ -18,19 +20,52 @@ android:versionName="TODO">
     <activity
         android:name="com.example.professionalservicesapp.ExploreActivity"
         android:exported="true"
-        android:theme="@style/Theme.ProfessionalServicesApp.NoActionBar">
-    </activity>
+        android:theme="@style/Theme.ProfessionalServicesApp.NoActionBar"
+        android:screenOrientation="portrait"
+        tools:ignore="LockedOrientationActivity"></activity>
     <activity
         android:name="com.example.professionalservicesapp.SignInActivity"
         android:exported="true"
         android:label="@string/title_activity_sign_in"
-        android:theme="@style/Theme.ProfessionalServicesApp.NoActionBar" >
+        android:theme="@style/Theme.ProfessionalServicesApp.NoActionBar"
+        android:screenOrientation="portrait"
+        tools:ignore="LockedOrientationActivity">
         <intent-filter>
             <action android:name="android.intent.action.MAIN" />
 
             <category android:name="android.intent.category.LAUNCHER" />
         </intent-filter>
     </activity>
-</application>
 
+    <service
+        android:name="com.example.professionalservicesapp.ExploreActivity"
+        android:foregroundServiceType="location">
+
+    </service>
+    <activity
+        android:name="com.example.professionalservicesapp.LocationAlertActivity"
+        android:exported="false"
+
+        >
+        <meta-data
+            android:name="android.app.lib_name"
+            android:value="" />
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="YOUR_API_KEY" />
+    </activity>
+</application>
 </manifest>
+
+
+    <!--
+             TODO: Before you run your application, you need a Google Maps API key.
+
+             To get one, follow the directions here:
+
+                https://developers.google.com/maps/documentation/android-sdk/get-api-key
+
+             Once you have your API key (it starts with "AIza"), define a new property in your
+             project's local.properties file (e.g. MAPS_API_KEY=Aiza...), and replace the
+             "YOUR_API_KEY" string in this file with "${MAPS_API_KEY}".
+         -->

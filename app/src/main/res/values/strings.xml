@@ -11,4 +11,13 @@
     <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="long_sample_text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+
+Eget nunc scelerisque viverra mauris in. Dictum non consectetur a erat. Habitasse platea dictumst vestibulum rhoncus est. Morbi non arcu risus quis varius quam quisque.
+
+Sit amet consectetur adipiscing elit duis tristique sollicitudin nibh sit.
+
+Vulputate odio ut enim blandit volutpat. Sociis natoque penatibus et magnis. Dictumst quisque sagittis purus sit amet volutpat consequat. </string>
+    <string name="short_sample_text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Faucibus scelerisque eleifend donec pretium. </string>
+    <string name="title_activity_location_alert">LocationAlertActivity</string>
 </resources>

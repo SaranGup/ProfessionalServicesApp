@@ -14,4 +14,6 @@
     <color name="yellow">#FFEB3B</color>
     <color name="yellow_fade">#80FFEB3B</color>
     <color name="black_dull">#202020</color>
+    <color name="background_grey">#646464</color>
+    <color name="hint_grey">#969696</color>
 </resources>

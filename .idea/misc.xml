@@ -3,13 +3,22 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Storage/Android_portfolio/ProfessionalServicesApp/app/src/main/res/drawable/circle_border.xml" value="0.277" />
+        <entry key="..\:/Storage/Android_portfolio/ProfessionalServicesApp/app/src/main/res/drawable/circle_border_large.xml" value="0.277" />
         <entry key="..\:/Storage/Android_portfolio/ProfessionalServicesApp/app/src/main/res/drawable/ic_baseline_keyboard_arrow_down_24.xml" value="0.1935" />
+        <entry key="..\:/Storage/Android_portfolio/ProfessionalServicesApp/app/src/main/res/drawable/sample_background.xml" value="0.277" />
+        <entry key="..\:/Storage/Android_portfolio/ProfessionalServicesApp/app/src/main/res/font/default_font.xml" value="0.31979166666666664" />
         <entry key="..\:/Storage/Android_portfolio/ProfessionalServicesApp/app/src/main/res/font/font1.xml" value="0.39166666666666666" />
+        <entry key="..\:/Storage/Android_portfolio/ProfessionalServicesApp/app/src/main/res/layout/explore_fragment.xml" value="0.20104166666666667" />
         <entry key="..\:/Storage/Android_portfolio/ProfessionalServicesApp/app/src/main/res/layout/explore_profession.xml" value="0.18541666666666667" />
         <entry key="..\:/Storage/Android_portfolio/ProfessionalServicesApp/app/src/main/res/layout/explore_search.xml" value="0.18541666666666667" />
         <entry key="..\:/Storage/Android_portfolio/ProfessionalServicesApp/app/src/main/res/layout/explore_settings.xml" value="0.18541666666666667" />
         <entry key="..\:/Storage/Android_portfolio/ProfessionalServicesApp/app/src/main/res/layout/fragment_blank.xml" value="0.18541666666666667" />
-        <entry key="..\:/Storage/Android_portfolio/ProfessionalServicesApp/app/src/main/res/layout/professional_details.xml" value="0.3614583333333333" />
+        <entry key="..\:/Storage/Android_portfolio/ProfessionalServicesApp/app/src/main/res/layout/fragment_enter_o_t_p.xml" value="0.1" />
+        <entry key="..\:/Storage/Android_portfolio/ProfessionalServicesApp/app/src/main/res/layout/fragment_enter_phone.xml" value="0.17135416666666667" />
+        <entry key="..\:/Storage/Android_portfolio/ProfessionalServicesApp/app/src/main/res/layout/fragment_sign_in.xml" value="0.17135416666666667" />
+        <entry key="..\:/Storage/Android_portfolio/ProfessionalServicesApp/app/src/main/res/layout/professional_details.xml" value="0.25" />
+        <entry key="..\:/Storage/Android_portfolio/ProfessionalServicesApp/app/src/main/res/layout/rating_box.xml" value="0.3614583333333333" />
         <entry key="..\:/Storage/Android_portfolio/ProfessionalServicesApp/app/src/main/res/layout/seach_result_item.xml" value="0.5285714285714286" />
         <entry key="..\:/Storage/Android_portfolio/ProfessionalServicesApp/app/src/main/res/layout/sign_in_layout.xml" value="0.18541666666666667" />
       </map>

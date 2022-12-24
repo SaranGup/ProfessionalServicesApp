@@ -1,0 +1,38 @@
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context="com.example.professionalservicesapp.EnterOTPFragment"
+    android:background="@color/black_blue">
+
+    <EditText
+        android:id="@+id/otp_box"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="number"
+        tools:layout_editor_absoluteX="12dp"
+        tools:layout_editor_absoluteY="12dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:textColor="@color/white"/>
+
+    <Button
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/otp_box"
+        android:id="@+id/check_otp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Check"
+        tools:layout_editor_absoluteX="27dp"
+        tools:layout_editor_absoluteY="79dp" />
+
+    <TextView
+        app:layout_constraintTop_toBottomOf="@id/check_otp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:id="@+id/confirmation"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Not Checked Yet"/>
+</androidx.constraintlayout.widget.ConstraintLayout>

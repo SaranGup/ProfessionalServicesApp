@@ -30,7 +30,7 @@ class SearchFragment : Fragment() {
     ): View? {
         // Inflate the layout for this fragment
         val view =  inflater.inflate(R.layout.explore_search, container, false)
-        activity!!.findViewById<EditText>(R.id.search_bar).text = Editable.Factory.getInstance().newEditable(searchQuery.searchQuery)
+        requireActivity().findViewById<EditText>(R.id.search_bar).text = Editable.Factory.getInstance().newEditable(searchQuery.searchQuery)
         searchList = view.findViewById(R.id.search_list)
         searchList.layoutManager = LinearLayoutManager(this.context)
         val adapter = SearchListAdapter()
